@@ -5,6 +5,7 @@ import Head from "next/head";
 
 import Bullet from "../../components/Bullet";
 import Bullets from "../../components/Bullets";
+import Link from "../../components/Link";
 import Heading from "../../components/Heading";
 import Text from "../../components/Text";
 
@@ -34,6 +35,7 @@ function Page({ children, theme }) {
       <article>
         <MDXProvider
           components={{
+            a: Link,
             h1: Heading,
             p: Text,
             ul: Bullets,
