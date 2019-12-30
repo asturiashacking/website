@@ -33,6 +33,10 @@ function Page({ children, theme }) {
       </Head>
 
       <article>
+        <header>
+          <h1>AsturiasHacking</h1>
+        </header>
+
         <MDXProvider
           components={{
             a: Link,
@@ -52,6 +56,20 @@ function Page({ children, theme }) {
           min-width: 100vw;
 
           background-color: ${theme.palette.background};
+        }
+
+        header {
+          padding: 1em;
+
+          background-color: ${theme.palette.accent};
+          color: ${theme.palette.white};
+        }
+
+        header h1 {
+          font-size: 1em;
+          margin: 0;
+
+          font-family: ${theme.typography.fontFamily};
         }
 
         section {

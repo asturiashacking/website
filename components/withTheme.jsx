@@ -2,7 +2,8 @@ export function withTheme(Komponent) {
   const theme = {
     palette: {
       accent: "#0000ff",
-      background: "#fafafa"
+      background: "#fafafa",
+      white: "#ffffff"
     },
 
     typography: {
