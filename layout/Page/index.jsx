@@ -51,6 +51,10 @@ function Page({ children, theme }) {
       </article>
 
       <style jsx>{`
+        :global(body) {
+          margin: 0;
+        }
+
         article {
           min-height: 100vh;
           min-width: 100vw;
