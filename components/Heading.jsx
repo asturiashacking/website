@@ -13,6 +13,7 @@ function Heading({ children, theme }) {
           flex-direction: column;
           font-size: 2em;
           letter-spacing: 1px;
+          line-height: 1.3em;
           margin: 1em 0;
 
           font-family: ${theme.typography.fontFamily};
