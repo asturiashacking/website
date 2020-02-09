@@ -78,7 +78,7 @@ function Page({ children, theme }) {
         }
 
         section {
-          padding: 5em 1em;
+          padding: 2em 1em;
           margin: 0 auto;
           max-width: calc(900px - 2em);
         }
