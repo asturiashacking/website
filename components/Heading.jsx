@@ -2,27 +2,53 @@ import React from "react";
 
 import { withTheme } from "./withTheme";
 
-function Heading({ children, theme }) {
+function Heading({
+  children,
+  theme,
+  size = "extraLarge",
+  element: Element = "h1"
+}) {
   return (
     <>
-      <h1>{children}</h1>
+      <Element className={size}>{children}</Element>
 
       <style jsx>{`
-        h1 {
+        .extraLarge,
+        .large {
           display: flex;
           flex-direction: column;
-          font-size: 2em;
           letter-spacing: 1px;
-          line-height: 1.3em;
-          margin: 1em 0;
 
           font-family: ${theme.typography.fontFamily};
           text-transform: uppercase;
         }
 
-        h1::after {
-          content: "---";
+        .extraLarge::after,
+        .large::after {
           line-height: 0.5em;
+        }
+
+        .extraLarge {
+          font-size: 2em;
+
+          line-height: 1.3em;
+          margin: 1em 0;
+        }
+
+        .extraLarge::after {
+          content: "---";
+        }
+
+        .large {
+          font-size: 1.5em;
+
+          font-weight: normal;
+          line-height: 1.3em;
+          margin: 1em 0 0.5em;
+        }
+
+        .large::after {
+          content: "-";
         }
       `}</style>
     </>

@@ -40,7 +40,8 @@ function Page({ children, theme }) {
         <MDXProvider
           components={{
             a: Link,
-            h1: Heading,
+            h1: props => <Heading size="extraLarge" element="h1" {...props} />,
+            h2: props => <Heading size="large" element="h2" {...props} />,
             p: Text,
             ul: Bullets,
             li: Bullet
