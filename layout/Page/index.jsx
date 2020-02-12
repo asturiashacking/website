@@ -58,7 +58,6 @@ function Page({ children, theme }) {
 
         article {
           min-height: 100vh;
-          min-width: 100vw;
 
           background-color: ${theme.palette.background};
         }
