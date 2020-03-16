@@ -1,7 +1,7 @@
 describe("Smoke", () => {
   describe("Home", () => {
     beforeEach(() => {
-      cy.visit("https://asturiashacking.org");
+      cy.visit("http://localhost:3000");
     });
 
     it("has a contact email", () => {
