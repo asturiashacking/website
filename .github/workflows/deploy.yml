@@ -1,8 +1,5 @@
-name: deploy website
-on:
-  push:
-    branches:
-      - master
+name: "Deployment"
+on: [push, pull_request]
 jobs:
   test:
     runs-on: ubuntu-16.04
@@ -15,6 +12,7 @@ jobs:
           start: npm start
           wait-on: "http://localhost:3000"
   deploy:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
