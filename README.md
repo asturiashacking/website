@@ -8,11 +8,11 @@ Como cualquier otro proyecto Node, lo primero para empezar a desarrollar es inst
 
 ## Cómo crear una nueva página
 
-Los ficheros `.mdx` bajo la carpeta `/pages` se convierten automáticamente en nuevas páginas en la web. Puedes utilizar como referencia algún otro fichero `.mdx` para ver cómo configurar correctamente el layout.
+Los ficheros `.mdx` bajo la carpeta `pages` se convierten automáticamente en nuevas páginas en la web. Puedes utilizar como referencia algún otro fichero `.mdx` para ver cómo configurar correctamente el layout.
 
 ## ¿Dónde están los componentes?
 
-Los componentes reutilizables se encuentran bajo la carpeta `/components`. Todos los elementos situados en esa carpeta deben ser _context-free_ y, por tanto, potencialmente utilizables en cualquier página de la web. Algunos componentes ya disponibles son:
+Los componentes reutilizables se encuentran bajo la carpeta `components`. Todos los elementos situados en esa carpeta deben ser _context-free_ y, por tanto, potencialmente utilizables en cualquier página de la web. Algunos componentes ya disponibles son:
 
 - Títulos
 - Listas
