@@ -34,7 +34,17 @@ function Page({ children, theme }) {
 
       <article>
         <header>
-          <h1>AsturiasHacking</h1>
+          <h1>
+            <a href="/">AsturiasHacking</a>
+          </h1>
+
+          <nav>
+            <ul>
+              <li>
+                <a href="/dojos">/dojos</a>
+              </li>
+            </ul>
+          </nav>
         </header>
 
         <MDXProvider
@@ -63,17 +73,36 @@ function Page({ children, theme }) {
         }
 
         header {
+          align-items: center;
+          display: flex;
+          justify-content: space-between;
           padding: 1em;
 
           background-color: ${theme.palette.accent};
           color: ${theme.palette.white};
+          font-family: ${theme.typography.fontFamily};
         }
 
         header h1 {
           font-size: 1em;
           margin: 0;
+        }
 
-          font-family: ${theme.typography.fontFamily};
+        header h1 a {
+          text-decoration: none;
+        }
+
+        header a {
+          color: currentColor;
+        }
+
+        header nav ul {
+          margin: 0;
+        }
+
+        header nav ul li {
+          display: inline;
+          font-size: 0.9em;
         }
 
         section {
