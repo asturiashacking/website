@@ -1,5 +1,7 @@
 # Sitio web de AsturiasHacking
 
+![Twitter](https://img.shields.io/twitter/follow/AsturiasHacking?style=social) ![Meetup](https://img.shields.io/badge/Meetup-AsturiasHacking-red?style=social&logo=meetup)
+
 Este proyecto contiene el código fuente para el [sitio web oficial][website] de la comunidad de [AsturiasHacking][meetup]. El sitio web está construido utilizando las siguientes tecnologías: [React][react], [NEXT.js][next], [MDX][mdx].
 
 # Desarrollo
