@@ -26,9 +26,11 @@ Para los estilos, estamos utilizando [styled-jsx][styled-jsx] (una implementaci�
 
 Como el sitio web es 100% presentacional y no contiene ningún tipo de lógica de negocio, hay una pequeña capa de [smoke tests][smoke-testing] construidos utilizando [Cypress][cypress]. Los test se pueden ejecutar localmente a través del comando: `npm run test`. Además, se ejecutarán automáticamente utilizando GitHub Actions con cada nuevo _push_ y _pull request_.
 
+Puedes ver los tests bajo la carpeta `cypress/integration`.
+
 # Despliegue
 
-Utilizando de nuevo [GitHub Actions][actions], se despliega automáticamente a [Zeit Now][now] con cada push a la rama de `master`.
+Utilizando de nuevo [GitHub Actions][actions], se despliega automáticamente a [Zeit Now][now] con cada push a la rama de `master`. La definición del script de despliegue la puedes encontrar bajo la carpeta `.github/workflows`.
 
 [website]: https://asturiashacking.org
 [meetup]: https://meetup.com/asturiashacking
