@@ -13,6 +13,7 @@ jobs:
           wait-on: "http://localhost:3000"
   deploy:
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
