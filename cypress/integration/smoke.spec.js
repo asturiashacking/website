@@ -32,11 +32,11 @@ describe("Smoke", () => {
 
     it("has the right links to coc, terms & conditions", () => {
       cy.get(
-        'a[href*="https://github.com/asturiashacking/core/blob/master/coc/CODE_OF_CONDUCT.md"]'
+        'a[href*="https://github.com/asturiashacking/core/blob/main/coc/CODE_OF_CONDUCT.md"]'
       ).should("exist");
 
       cy.get(
-        'a[href*="https://github.com/asturiashacking/activities/blob/master/TERMS.md"]'
+        'a[href*="https://github.com/asturiashacking/activities/blob/main/TERMS.md"]'
       ).should("exist");
     });
 
