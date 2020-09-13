@@ -12,7 +12,7 @@ jobs:
           start: npm start
           wait-on: "http://localhost:3000"
   deploy:
-    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     needs: test
     runs-on: ubuntu-latest
     steps:
