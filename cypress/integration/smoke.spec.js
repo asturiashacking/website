@@ -9,9 +9,8 @@ describe("Smoke", () => {
     });
 
     it("has the right links to social media", () => {
-      cy.get('a[href*="https://meetup.com/asturiashacking"]').should("exist");
+      cy.get('a[href*="https://saraos.tech/@asturiashacking"]').should("exist");
       cy.get('a[href*="https://twitter.com/asturiashacking"]').should("exist");
-      cy.get('a[href*="https://github.com/asturiashacking"]').should("exist");
     });
 
     it("has the ability to navigate to Dojos", () => {
