@@ -3,16 +3,16 @@
 ![Twitter](https://img.shields.io/twitter/follow/AsturiasHacking?style=social)
 
 Este proyecto contiene el código fuente para el [sitio web oficial][website] de
-[AsturiasHacking][saraos]. El sitio web está construido utilizando las
+[AsturiasHacking][saraos]. La aplicación está construida utilizando las
 siguientes tecnologías: [React][react], [NEXT.js][next] y [MDX][mdx].
 
 # Desarrollo
 
-Como cualquier otro proyecto Node, lo primero para empezar a desarrollar es
-instalar las dependencias a través del comando: `npm install`. Después, puedes
-arrancar un servidor de desarrollo a través del comando: `npm run dev`, esto
-debería hacer que una versión local de la web de AsturiasHacking se cargue en la
-URL: <http://localhost:3000>.
+Como cualquier otro proyecto Node, lo primero es instalar las dependencias a
+través del comando: `npm install`. Después, puedes arrancar un servidor de
+desarrollo a través del comando: `npm run dev`, esto debería hacer que una
+versión local de la web de AsturiasHacking se cargue en la URL:
+<http://localhost:3000>.
 
 ## Cómo crear una nueva página
 
@@ -49,9 +49,10 @@ Puedes ver los tests bajo la carpeta `cypress/integration`.
 
 # Despliegue
 
-Utilizando de nuevo [GitHub Actions][actions], se despliega automáticamente a
-[Vercel][vercel] con cada push a la rama de `main`. La definición del script de
-despliegue la puedes encontrar bajo la carpeta `.github/workflows`.
+[Vercel][vercel] despliega automáticamente el sitio web con cada push. Si este
+se produce sobre `main`, se realiza un despliegue a [producción][website]. Si se
+hace a cualquier otra rama, Vercel crea un despliegue temporal en un entorno de
+_preview_ para poder ver los cambios.
 
 [website]: https://asturiashacking.org
 [saraos]: https://saraos.tech/@asturiashacking
