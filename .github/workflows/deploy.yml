@@ -12,15 +12,3 @@ jobs:
       - uses: cypress-io/github-action@v2
         with:
           command: "npm run ci:test"
-  deploy:
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: amondnet/vercel-action@v20
-        with:
-          vercel-args: "--prod"
-          vercel-org-id: ${{ secrets.ORG_ID }}
-          vercel-project-id: ${{ secrets.PROJECT_ID }}
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
