@@ -8,7 +8,7 @@ function Bullet({ children, theme }) {
 
       <style jsx>{`
         li {
-          line-height: 1.5;
+          line-height: 1.65;
           overflow-wrap: break-word;
 
           font-family: ${theme.typography.fontFamily};

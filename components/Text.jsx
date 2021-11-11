@@ -9,7 +9,7 @@ function Text({ children, theme }) {
 
       <style jsx>{`
         p {
-          line-height: 1.4;
+          line-height: 1.65;
           margin: 0;
 
           font-family: ${theme.typography.fontFamily};
