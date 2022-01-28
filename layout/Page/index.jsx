@@ -38,14 +38,16 @@ function Page({ children, theme }) {
 
       <article>
         <header>
-          <h1>
-            <a href="/">AsturiasHacking</a>
-          </h1>
+          <a href="/">
+            <img src="/logo.svg" />
+          </a>
 
           <nav>
             <ul>
               <li>
-                <a href="/dojos">/dojos</a>
+                <a href="/dojos">
+                  <span>~/dojos</span>
+                </a>
               </li>
             </ul>
           </nav>
@@ -70,43 +72,62 @@ function Page({ children, theme }) {
           margin: 0;
         }
 
+        header {
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin: 0 auto;
+          max-width: calc(900px - 2em);
+          padding: 3em 1em 1em;
+        }
+
+        header > a > img {
+          max-width: 200px;
+        }
+
+        header > nav > ul {
+          list-style-type: none;
+          margin: 2em 0 0;
+          padding: 0;
+        }
+
+        header > nav > ul > li:not(:last-of-type) {
+          margin-bottom: 1em;
+        }
+
+        header > nav > ul > li {
+          font-family: ${theme.typography.families.monospace};
+        }
+
+        header > nav > ul > li > span {
+          opacity: 0.3;
+          margin-right: 0.5em;
+        }
+
+        header > nav > ul > li > a {
+          color: currentColor;
+
+          text-decoration: none;
+        }
+
+        header > nav > ul > li > a::before {
+          content: "cd";
+
+          margin-right: 0.5em;
+
+          opacity: 0.3;
+          text-decoration: none;
+        }
+
+        header > nav > ul > li > a > span {
+          text-decoration: underline;
+        }
+
         article {
           min-height: 100vh;
 
           background-color: ${theme.palette.background};
-        }
-
-        header {
-          align-items: center;
-          display: flex;
-          justify-content: space-between;
-          padding: 1em;
-
-          background-color: ${theme.palette.accent};
-          color: ${theme.palette.white};
-          font-family: ${theme.typography.families.monospace};
-        }
-
-        header h1 {
-          font-size: 1em;
-          margin: 0;
-        }
-
-        header h1 a {
-          text-decoration: none;
-        }
-
-        header a {
-          color: currentColor;
-        }
-
-        header nav ul {
-          margin: 0;
-        }
-
-        header nav ul li {
-          display: inline;
-          font-size: 0.9em;
         }
 
         section {
