@@ -12,7 +12,7 @@ function Text({ children, theme }) {
           line-height: 1.65;
           margin: 0;
 
-          font-family: ${theme.typography.fontFamily};
+          font-family: ${theme.typography.families.monospace};
         }
 
         p:not(:last-of-type) {

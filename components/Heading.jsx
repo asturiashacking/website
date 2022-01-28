@@ -19,7 +19,7 @@ function Heading({
           flex-direction: column;
           letter-spacing: 1px;
 
-          font-family: ${theme.typography.fontFamily};
+          font-family: ${theme.typography.families.sansSerif};
           text-transform: uppercase;
         }
 

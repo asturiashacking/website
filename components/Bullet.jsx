@@ -11,7 +11,7 @@ function Bullet({ children, theme }) {
           line-height: 1.65;
           overflow-wrap: break-word;
 
-          font-family: ${theme.typography.fontFamily};
+          font-family: ${theme.typography.families.monospace};
         }
 
         li:not(:first-of-type) {

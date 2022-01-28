@@ -7,7 +7,10 @@ export function withTheme(Komponent) {
     },
 
     typography: {
-      fontFamily: "'Space Mono', monospace;"
+      families: {
+        monospace: "'Space Mono', monospace;",
+        sansSerif: "'Space Grotesk', sans-serif;"
+      }
     }
   };
 

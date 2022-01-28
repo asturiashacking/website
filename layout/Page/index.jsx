@@ -84,7 +84,7 @@ function Page({ children, theme }) {
 
           background-color: ${theme.palette.accent};
           color: ${theme.palette.white};
-          font-family: ${theme.typography.fontFamily};
+          font-family: ${theme.typography.families.monospace};
         }
 
         header h1 {
