@@ -7,7 +7,7 @@ export function withTheme(Komponent) {
     },
 
     typography: {
-      fontFamily: "'Roboto Mono', monospace;"
+      fontFamily: "'Space Mono', monospace;"
     }
   };
 
