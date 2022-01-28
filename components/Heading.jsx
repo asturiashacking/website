@@ -20,6 +20,7 @@ function Heading({
           letter-spacing: 1px;
 
           font-family: ${theme.typography.families.sansSerif};
+          font-weight: 500;
           text-transform: uppercase;
         }
 
