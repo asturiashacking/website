@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "next build && next export",
+    "export": "next build && next export",
     "ci:test": "npm run test",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
